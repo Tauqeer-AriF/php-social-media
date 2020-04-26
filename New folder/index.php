@@ -16,7 +16,7 @@
         <span class="navbar-toggle" id="js-navbar-toggle">
         <i class="fa fa-fw fa-home"></i>
         </span>
-        <a href="#" class="logo">TauqEER's MEDIA</a>
+        <a href="#" class='heart animated css'>TauqEER's MEDIA</a>
         <ul class="main-nav" id="js-menu">
             <li>
                 <a href="#" class="nav-links">Home</a>
@@ -37,17 +37,17 @@
     </nav>
 
     <div class="modal-btn">
-       <h3>Let's Have your kind Status:-</h3><button id="myBtn">Upload Status</button>
+       <h3>Let's Have your kind Status :-</h3><button id="myBtn">Upload Status</button>
     </div>
-    <div id="myModal" class="modal">
 
+    <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
                 <div class="content">
                     <form action="" method="post" enctype="multipart/form-data">
                         <input type="text" name="rollno" value="" placeholder="ID"/><br><br>
                         <input type="text" name="studentname" value="" placeholder="Name"/><br><br>
-                        <input type="text" name="class" value="" placeholder="Class"/><br><br>
+                        <input type="text" name="class" value="" placeholder="Status"/><br><br>
                         <input type="file" name="uploadfile" value="" id="choose-file"/>
                         <input type="submit" name="submit" value="submit" id="btn"/>
                     </form>
@@ -90,7 +90,9 @@
     ?>
 
     </div>
-      </div>
+    </div>
+
+
 
       <footer>
   <ul>
@@ -127,7 +129,6 @@ var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
