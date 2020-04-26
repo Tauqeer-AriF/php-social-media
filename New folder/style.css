@@ -1,0 +1,395 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+
+
+  @font-face {
+    font-family: 'Hyperion Bold';
+    src: url('font/Hyperion Bold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hyperion Light';
+    src: url('font/Hyperion Light.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hyperion Regular';
+    src: url('font/Hyperion Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+  .content{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  form{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  input{
+    font-family: 'Hyperion Light';
+    width: 500px;
+    height: 30px;
+    padding-left: 20px;
+    transition: 0.3s;
+    border: 1px solid #37a000;
+    color: #37a000;
+  }
+  input:hover{
+    border: unset;
+    border-left: 1px solid #37a000;
+  }
+  #choose-file{
+    border: unset;
+    padding-left: unset;
+  }
+  #choose-file:hover{
+    border: unset;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  #btn{
+    margin-top: 10px;
+    padding-left: unset;
+    background-color:#37a000;
+    color: white;
+    border: unset;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  #btn:hover{
+    background-color: unset;
+    border-left: 2px solid #37a000;
+    border-right: 2px solid #37a000;
+    color: #37a000;
+    font-weight: bolder;
+    box-shadow: unset;
+  }
+
+.display{
+  background-color: ;
+  width: 60%;
+  margin: auto;
+}
+.single-div{  
+  border: 1px solid #eee;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.single-div:hover{
+  background-color: #002a38;
+}
+#id{
+  display: none;
+}
+#name{
+  font-family: 'Hyperion Bold';
+  color:#37a000;
+}
+#img{
+  text-align: center;
+}
+#class{
+  font-family: 'Hyperion Light';
+  color:#37a000;
+}
+#update{
+  font-size: 12px;
+  font-family: 'Hyperion Regular';
+}
+#delete{
+  font-family: 'Hyperion Regular';
+  float:right;
+  font-size: 12px;
+}
+
+
+
+
+
+
+.navbar {
+  font-family: 'Hyperion Regular';
+  font-size: 18px;
+  background-color: #37a000;
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+  }
+
+  .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+
+  .main-nav li {
+      margin: 0;
+  }
+
+  .nav-links {
+      margin-left: 40px;
+  }
+
+  .logo {
+      margin-top: 0;
+  }
+
+  .navbar-toggle {
+      display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+      color: rgba(255, 255, 255, 1);
+  }
+}
+
+
+
+
+.modal-btn{
+  font-family: 'Hyperion Regular';
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid #eee;
+  padding: 10px;
+  transition: 0.4s;
+}
+.modal-btn:hover{
+  background-color:#eee;
+  color: #37a000;
+}
+.modal-btn button{
+  font-family: 'Hyperion Light';
+  float:right;
+  margin-top: -45px;
+  background-color:#37a000;
+  border: unset;
+  color: white;
+  width: 150px;
+  height: 40px;
+  transition: 0.3s;
+  }
+  .modal-btn button:hover{
+    background-color: white;
+    border-left: 2px solid #37a000;
+    border-right: 2px solid #37a000;
+    color: #37a000;
+    font-weight: bolder;
+
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  padding-right: 10px;
+  position: fixed;
+  bottom: 100;
+  left:130;
+  background-color: #fefefe;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+  
+}
+
+/* The Close Button */
+.close {
+  font-family: 'Hyperion Light';
+  color: #37a000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  transform: rotate(180deg);
+  
+}
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -500px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+
+
+footer ul {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-gap: 24px;
+  justify-items: center;
+  margin: auto;
+  list-style: none;
+}
+
+@media (min-width: 500px) {
+  footer ul {
+    grid-auto-flow: column;
+  }
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+
+footer a:hover {
+  box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+
+footer li:last-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+footer li:hover ~ li p {
+  animation: wave-animation 0.3s infinite;
+}
+footer li p{
+  margin-top: -1px;
+}
+
+footer {
+  font-family: 'Hyperion Light';
+  margin-top: 50px;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: #37a000;
+  line-height: 1.3;
+}
+
+@keyframes wave-animation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+  form {
+    width: 80%;
+    margin: auto;
+  }
+  input {
+    width: 80%;
+    margin: auto;
+  }
+}
