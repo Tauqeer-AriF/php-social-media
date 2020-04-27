@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
+    background: #f7f7f7;
   }
 
 
@@ -79,19 +80,21 @@ body {
   }
 
 .display{
-  background-color: ;
   width: 60%;
   margin: auto;
 }
 .single-div{  
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 20px;
-  transition: 0.3s;
+  transition: 0.5s;
+  background-color: white;
 }
 .single-div:hover{
   background-color: #002a38;
+  /* margin-top: -10px; */
+  transform: scale(1.1);
 }
 #id{
   display: none;
@@ -218,9 +221,6 @@ body {
   transform: scale(1);
   transition: all 1s; 
 }
-.heart.css {  
-  animation-dely:1s;
-}
 .heart.animated {
   -webkit-animation: 1600ms pulsate infinite alternate ease-in-out;
   -moz-animation: 1600ms pulsate infinite alternate ease-in-out;
@@ -275,19 +275,21 @@ body {
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
   padding: 10px;
   transition: 0.4s;
   color: #aaa;
+  background-color: white;
 }
 .modal-btn:hover{
   background-color:#eee;
   color: #37a000;
+  box-shadow: 0 0 20px #ddd;
 }
 .modal-btn button{
   font-family: 'Hyperion Light';
   float:right;
-  margin-top: -45px;
+  margin-top: -49px;
   background-color:#37a000;
   border: unset;
   color: white;
@@ -401,7 +403,7 @@ footer a {
 }
 
 footer a:hover {
-  box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+  color:white;
 }
 
 footer li:last-child {
